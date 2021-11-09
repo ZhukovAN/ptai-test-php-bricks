@@ -109,14 +109,6 @@
             "text" : "\"Httponly\" attribute is not set for cookie and it causes client-side script has ability to extract cookie.  An attacker may intercept cookie using XSS attack. It is recommended to set this attribute for valuable cookie variables. Cookie with this attribute cannot be accessed through client side script."
           }
         }, {
-          "id" : "Serverfingerprinting",
-          "shortDescription" : {
-            "text" : "Server Fingerprinting"
-          },
-          "fullDescription" : {
-            "text" : "Fingerprinting is a technique aimed at collecting as much information as possible about a web application and its components. Hacker can later use such information to develop more targeted and efficient attacks."
-          }
-        }, {
           "id" : "96",
           "shortDescription" : {
             "text" : "Hardcoded Password"
@@ -163,14 +155,6 @@
           },
           "fullDescription" : {
             "text" : "The code uses a variable that has not been initialized, leading to unpredictable or unintended results. In some languages such as C and C++, stack variables are not initialized by default. They generally contain junk data with the contents of stack memory before the function was invoked. An attacker can sometimes control or read these contents. In other languages or conditions, a variable that is not explicitly initialized can be given a default value that has security implications, depending on the logic of the program. The presence of an uninitialized variable can sometimes indicate a typographic error in the code."
-          }
-        }, {
-          "id" : "Information Exposure",
-          "shortDescription" : {
-            "text" : "Information Exposure"
-          },
-          "fullDescription" : {
-            "text" : "An information exposure is the intentional or unintentional disclosure of information to an actor that is not explicitly authorized to have access to that information."
           }
         }, {
           "id" : "DOM Modification HTML Tag",
@@ -257,21 +241,19 @@
     },
     "results" : [ {
       "ruleId" : "JQueryRule",
-      "ruleIndex" : 0,
       "message" : {
         "text" : "Vulnerable component Any JQuery version 1.0.0"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\jquery.js",
+            "uri" : "javascripts/jquery.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "Server-Side Request Forgery",
-      "ruleIndex" : 1,
       "message" : {
         "text" : "Server-Side Request Forgery"
       },
@@ -354,7 +336,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -437,7 +418,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -539,7 +519,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -641,14 +620,26 @@
       } ]
     }, {
       "ruleId" : "96",
-      "ruleIndex" : 3,
       "message" : {
         "text" : "Hardcoded Password"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "LocalSettings.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 6,
+            "endLine" : 6,
+            "snippet" : {
+              "text" : "$dbpass = 'root'; //MySQL database password"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -750,7 +741,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -852,14 +842,26 @@
       } ]
     }, {
       "ruleId" : "147",
-      "ruleIndex" : 4,
       "message" : {
         "text" : "Sensitive Cookie in HTTPS Session Without ‘Httponly’ Attribute"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 12,
+            "endLine" : 12,
+            "snippet" : {
+              "text" : "setcookie(User, $username);"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -961,7 +963,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1063,21 +1064,46 @@
       } ]
     }, {
       "ruleId" : "96",
-      "ruleIndex" : 3,
       "message" : {
         "text" : "Hardcoded Password"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "includes/MySQLHandler.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 6,
+            "endLine" : 6,
+            "snippet" : {
+              "text" : "$con = mysql_connect($host,$dbuser,$dbpass);"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "96",
-      "ruleIndex" : 3,
       "message" : {
         "text" : "Hardcoded Password"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "LocalSettings.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 6,
+            "endLine" : 6,
+            "snippet" : {
+              "text" : "$dbpass = 'root'"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1217,7 +1243,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1357,7 +1382,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1497,49 +1521,126 @@
       } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/config.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 31,
+            "endLine" : 31,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 56,
+            "endLine" : 56,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 8,
+            "endLine" : 8,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 69,
+            "endLine" : 69,
+            "snippet" : {
+              "text" : ">Password:"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 71,
+            "endLine" : 71,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "98",
-      "ruleIndex" : 8,
       "message" : {
         "text" : "Insecure Transport"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "LocalSettings.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 10,
+            "endLine" : 10,
+            "snippet" : {
+              "text" : "'http://127.0.0.1'"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1641,77 +1742,206 @@
       } ]
     }, {
       "ruleId" : "96",
-      "ruleIndex" : 3,
       "message" : {
         "text" : "Hardcoded Password"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 5,
+            "endLine" : 5,
+            "snippet" : {
+              "text" : "$con = mysql_connect($host,$dbuser,$dbpass);"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 59,
+            "endLine" : 59,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "146",
-      "ruleIndex" : 9,
       "message" : {
         "text" : "Sensitive Cookie in HTTPS Session Without ‘Secure’ Attribute"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 12,
+            "endLine" : 12,
+            "snippet" : {
+              "text" : "setcookie(User, $username)"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 46,
+            "endLine" : 46,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 54,
+            "endLine" : 54,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-6/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 10,
+            "endLine" : 10,
+            "snippet" : {
+              "text" : "password='"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 82,
+            "endLine" : 82,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "147",
-      "ruleIndex" : 4,
       "message" : {
         "text" : "Sensitive Cookie in HTTPS Session Without ‘Httponly’ Attribute"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-5/logout.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 7,
+            "endLine" : 7,
+            "snippet" : {
+              "text" : "setcookie('User', '', time() - 3600);"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 91,
+            "endLine" : 91,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-3/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 7,
+            "endLine" : 7,
+            "snippet" : {
+              "text" : "password=("
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -1813,63 +2043,166 @@
       } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 101,
+            "endLine" : 101,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-1/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 47,
+            "endLine" : 47,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-1/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 46,
+            "endLine" : 46,
+            "snippet" : {
+              "text" : "Password:"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/setup.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 110,
+            "endLine" : 110,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-2/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 48,
+            "endLine" : 48,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-4/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 48,
+            "endLine" : 48,
+            "snippet" : {
+              "text" : "Password:"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "101",
-      "ruleIndex" : 10,
       "message" : {
         "text" : "Weak Cryptographic Hash"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 6,
+            "endLine" : 6,
+            "snippet" : {
+              "text" : "md5($_POST['passwd'])"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-3/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 46,
+            "endLine" : 46,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -1971,91 +2304,111 @@
       } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-2/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 46,
+            "endLine" : 46,
+            "snippet" : {
+              "text" : "Password:"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "DC-FP-CVE-2015-9251",
-      "ruleIndex" : 11,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2015-9251)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\jquery.js",
+            "uri" : "javascripts/jquery.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2012-6708",
-      "ruleIndex" : 12,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2012-6708)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\jquery.js",
+            "uri" : "javascripts/jquery.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2019-11358",
-      "ruleIndex" : 13,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2019-11358)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\jquery.js",
+            "uri" : "javascripts/jquery.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2020-11023",
-      "ruleIndex" : 14,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2020-11023)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\jquery.js",
+            "uri" : "javascripts/jquery.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2020-11022",
-      "ruleIndex" : 15,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2020-11022)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\jquery.js",
+            "uri" : "javascripts/jquery.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "includes/MySQLHandler.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 14,
+            "endLine" : 14,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -2195,7 +2548,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -2278,7 +2630,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -2380,21 +2731,46 @@
       } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-6/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 45,
+            "endLine" : 45,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "104",
-      "ruleIndex" : 6,
       "message" : {
         "text" : "System Information Leak"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-4/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 42,
+            "endLine" : 42,
+            "snippet" : {
+              "text" : "mysql_error()"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -2496,77 +2872,71 @@
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2015-9251",
-      "ruleIndex" : 11,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2015-9251)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\foundation.min.js",
+            "uri" : "javascripts/foundation.min.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2012-6708",
-      "ruleIndex" : 12,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2012-6708)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\foundation.min.js",
+            "uri" : "javascripts/foundation.min.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2019-11358",
-      "ruleIndex" : 13,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2019-11358)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\foundation.min.js",
+            "uri" : "javascripts/foundation.min.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2020-11023",
-      "ruleIndex" : 14,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2020-11023)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\foundation.min.js",
+            "uri" : "javascripts/foundation.min.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "DC-FP-CVE-2020-11022",
-      "ruleIndex" : 15,
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2020-11022)"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\foundation.min.js",
+            "uri" : "javascripts/foundation.min.js",
             "uriBaseId" : "SRCROOT"
           }
         }
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -2668,7 +3038,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -2770,7 +3139,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -2872,7 +3240,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -2974,7 +3341,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -3228,14 +3594,26 @@
       } ]
     }, {
       "ruleId" : "98",
-      "ruleIndex" : 8,
       "message" : {
         "text" : "Insecure Transport"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 4,
+            "endLine" : 4,
+            "snippet" : {
+              "text" : "\"http://www.w3.org/2000/svg\""
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -3432,14 +3810,26 @@
       } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 18,
+            "endLine" : 18,
+            "snippet" : {
+              "text" : "try{r=r===\"true\"?!0:r===\"false\"?!1:r===\"null\"?null:+r+\"\"===r?+r:D.test(r)?v.parseJSON(r):r}catch(s){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -3598,7 +3988,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -3700,7 +4089,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -3802,28 +4190,66 @@
       } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 19,
+            "endLine" : 19,
+            "snippet" : {
+              "text" : "try{var a=u.call(t,n);if(a||e||t.document&&t.document.nodeType!==11)return a}catch(f){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 46,
+            "endLine" : 46,
+            "snippet" : {
+              "text" : "try{o=!e.frameElement}catch(d){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.foundation.orbit.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 724,
+            "endLine" : 724,
+            "snippet" : {
+              "text" : "try{c=!n.frameElement}catch(y){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "DOM Modification HTML Tag",
-      "ruleIndex" : 19,
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -3906,7 +4332,6 @@
       } ]
     }, {
       "ruleId" : "DOM Modification HTML Tag",
-      "ruleIndex" : 19,
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -3989,7 +4414,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -4072,7 +4496,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -4155,7 +4578,6 @@
       } ]
     }, {
       "ruleId" : "DOM Modification HTML Tag",
-      "ruleIndex" : 19,
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -4276,7 +4698,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -4454,7 +4875,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -4594,7 +5014,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -4734,7 +5153,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -4817,7 +5235,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -4900,7 +5317,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -5040,7 +5456,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -5275,7 +5690,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -5358,7 +5772,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -5460,7 +5873,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -5771,7 +6183,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -6025,7 +6436,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -6279,7 +6689,6 @@
       } ]
     }, {
       "ruleId" : "DOM Modification HTML Tag",
-      "ruleIndex" : 19,
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -6362,7 +6771,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -6464,7 +6872,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -6566,7 +6973,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -6668,7 +7074,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -6770,7 +7175,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -6872,7 +7276,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7012,14 +7415,26 @@
       } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 1810,
+            "endLine" : 1818,
+            "snippet" : {
+              "text" : "try { data = data === \"true\" ? true : data === \"false\" ? false : data === \"null\" ? null : // Only convert to a number if it doesn't change the string +data + \"\" === data ? +data : rbrace.test( data ) ? jQuery.parseJSON( data ) : data; } catch( e ) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7159,14 +7574,26 @@
       } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 5262,
+            "endLine" : 5272,
+            "snippet" : {
+              "text" : "try { push.apply( results, slice.call( newContext.querySelectorAll( newSelector ), 0 ) ); return results; } catch(qsaError) { } finally { if ( !old ) { context.removeAttribute(\"id\"); } }"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7306,7 +7733,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7408,21 +7834,46 @@
       } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 6735,
+            "endLine" : 6737,
+            "snippet" : {
+              "text" : "try { style[ name ] = value; } catch(e) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 8327,
+            "endLine" : 8329,
+            "snippet" : {
+              "text" : "try { return new window.XMLHttpRequest(); } catch( e ) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -7581,7 +8032,6 @@
       } ]
     }, {
       "ruleId" : "DOM Modification HTML Tag",
-      "ruleIndex" : 19,
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -7664,7 +8114,6 @@
       } ]
     }, {
       "ruleId" : "Unrestricted File Upload",
-      "ruleIndex" : 20,
       "message" : {
         "text" : "Unrestricted File Upload"
       },
@@ -7747,7 +8196,6 @@
       } ]
     }, {
       "ruleId" : "DOM Modification HTML Tag",
-      "ruleIndex" : 19,
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -7830,7 +8278,6 @@
       } ]
     }, {
       "ruleId" : "Arbitrary File Creation",
-      "ruleIndex" : 21,
       "message" : {
         "text" : "Arbitrary File Creation"
       },
@@ -7913,7 +8360,6 @@
       } ]
     }, {
       "ruleId" : "Arbitrary File Modification",
-      "ruleIndex" : 22,
       "message" : {
         "text" : "Arbitrary File Modification"
       },
@@ -7996,7 +8442,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -8079,7 +8524,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -8219,7 +8663,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -8530,7 +8973,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -8822,7 +9264,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -9095,7 +9536,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -9425,7 +9865,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -9926,7 +10365,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -10142,7 +10580,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -10339,7 +10776,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -10897,7 +11333,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -11037,7 +11472,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -11481,7 +11915,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -11583,7 +12016,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -11761,7 +12193,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -12319,7 +12750,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -12592,7 +13022,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -13093,7 +13522,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -13537,7 +13965,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -13905,7 +14332,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -14254,7 +14680,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -14641,7 +15066,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -14971,7 +15395,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -15339,7 +15762,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -15669,7 +16091,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -15980,7 +16401,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -16291,7 +16711,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -16412,7 +16831,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -16818,7 +17236,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -16901,7 +17318,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -17098,7 +17514,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -17238,7 +17653,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -17321,7 +17735,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -17499,7 +17912,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -17734,7 +18146,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -17836,7 +18247,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -18014,7 +18424,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -18135,7 +18544,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -18256,7 +18664,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -18491,7 +18898,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -18688,7 +19094,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -18828,7 +19233,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -19063,7 +19467,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -19374,7 +19777,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -19571,7 +19973,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -19692,7 +20093,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -19946,7 +20346,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -20124,7 +20523,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -20283,7 +20681,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -20442,7 +20839,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -20639,7 +21035,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -20912,7 +21307,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -20995,7 +21389,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21078,7 +21471,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21161,7 +21553,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21358,7 +21749,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21441,7 +21831,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21733,7 +22122,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21816,7 +22204,6 @@
       } ]
     }, {
       "ruleId" : "JQuery function that replaces element",
-      "ruleIndex" : 23,
       "message" : {
         "text" : "JQuery function that replaces element"
       },
@@ -22241,7 +22628,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -22343,7 +22729,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -22559,7 +22944,6 @@
       } ]
     }, {
       "ruleId" : "JQuery function that replaces element",
-      "ruleIndex" : 23,
       "message" : {
         "text" : "JQuery function that replaces element"
       },
@@ -22661,7 +23045,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -22801,7 +23184,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -22941,7 +23323,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -23081,7 +23462,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -23183,7 +23563,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -23285,7 +23664,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -23501,7 +23879,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -23869,7 +24246,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -23952,7 +24328,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24035,7 +24410,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24137,7 +24511,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24277,7 +24650,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24379,7 +24751,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24519,7 +24890,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -24621,7 +24991,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -24723,7 +25092,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -24825,7 +25193,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -24965,7 +25332,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -25067,7 +25433,6 @@
       } ]
     }, {
       "ruleId" : "Arbitrary File Creation",
-      "ruleIndex" : 21,
       "message" : {
         "text" : "Arbitrary File Creation"
       },
@@ -25150,7 +25515,6 @@
       } ]
     }, {
       "ruleId" : "Unrestricted File Upload",
-      "ruleIndex" : 20,
       "message" : {
         "text" : "Unrestricted File Upload"
       },
@@ -25233,7 +25597,6 @@
       } ]
     }, {
       "ruleId" : "Arbitrary File Modification",
-      "ruleIndex" : 22,
       "message" : {
         "text" : "Arbitrary File Modification"
       },
@@ -25316,7 +25679,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -25399,7 +25761,6 @@
       } ]
     }, {
       "ruleId" : "Arbitrary File Creation",
-      "ruleIndex" : 21,
       "message" : {
         "text" : "Arbitrary File Creation"
       },
@@ -25482,7 +25843,6 @@
       } ]
     }, {
       "ruleId" : "Arbitrary File Creation",
-      "ruleIndex" : 21,
       "message" : {
         "text" : "Arbitrary File Creation"
       },
@@ -25565,7 +25925,6 @@
       } ]
     }, {
       "ruleId" : "Unrestricted File Upload",
-      "ruleIndex" : 20,
       "message" : {
         "text" : "Unrestricted File Upload"
       },
@@ -25648,7 +26007,6 @@
       } ]
     }, {
       "ruleId" : "Unrestricted File Upload",
-      "ruleIndex" : 20,
       "message" : {
         "text" : "Unrestricted File Upload"
       },
@@ -25731,7 +26089,6 @@
       } ]
     }, {
       "ruleId" : "Arbitrary File Modification",
-      "ruleIndex" : 22,
       "message" : {
         "text" : "Arbitrary File Modification"
       },
@@ -25814,7 +26171,6 @@
       } ]
     }, {
       "ruleId" : "Arbitrary File Modification",
-      "ruleIndex" : 22,
       "message" : {
         "text" : "Arbitrary File Modification"
       },
@@ -25897,7 +26253,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -25980,7 +26335,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26063,7 +26417,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
-      "ruleIndex" : 25,
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -26260,7 +26613,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -26362,7 +26714,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26502,7 +26853,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26642,7 +26992,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26782,7 +27131,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26884,7 +27232,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionFunction",
-      "ruleIndex" : 26,
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -27138,7 +27485,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
-      "ruleIndex" : 25,
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -27259,7 +27605,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
-      "ruleIndex" : 25,
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -27342,7 +27687,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
-      "ruleIndex" : 25,
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -27577,7 +27921,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionFunction",
-      "ruleIndex" : 26,
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -27831,7 +28174,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionFunction",
-      "ruleIndex" : 26,
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -28161,7 +28503,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionFunction",
-      "ruleIndex" : 26,
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -28320,7 +28661,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -28422,7 +28762,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -28676,7 +29015,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -28759,7 +29097,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -28918,7 +29255,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -29001,7 +29337,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -29141,7 +29476,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -29281,7 +29615,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -29364,7 +29697,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -29447,14 +29779,26 @@
       } ]
     }, {
       "ruleId" : "98",
-      "ruleIndex" : 8,
       "message" : {
         "text" : "Insecure Transport"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/modernizr.foundation.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 4,
+            "endLine" : 4,
+            "snippet" : {
+              "text" : "\"http://www.w3.org/2000/svg\""
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "DOM Modification HTML Tag",
-      "ruleIndex" : 19,
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -29574,36 +29918,27 @@
         } ]
       } ]
     }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Serverfingerprinting",
-      "ruleIndex" : 29,
-      "message" : {
-        "text" : "Server Fingerprinting"
-      },
-      "locations" : [ { } ]
-    }, {
       "ruleId" : "162",
-      "ruleIndex" : 30,
       "message" : {
         "text" : "Use of Uninitialized Variable"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "includes/PHPReverseProxy.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 31,
+            "endLine" : 31,
+            "snippet" : {
+              "text" : "return $this->translateServer($ServerName).$this->path.\"?\".$_SERVER['QUERY_STRING'];"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -29837,22 +30172,7 @@
         } ]
       } ]
     }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -29972,15 +30292,7 @@
         } ]
       } ]
     }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
       "ruleId" : "Server-Side Request Forgery",
-      "ruleIndex" : 1,
       "message" : {
         "text" : "Server-Side Request Forgery"
       },
@@ -30062,239 +30374,7 @@
         } ]
       } ]
     }, {
-      "ruleId" : "Unrestricted File Upload",
-      "ruleIndex" : 20,
-      "message" : {
-        "text" : "Unrestricted File Upload"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Unrestricted File Upload",
-      "ruleIndex" : 20,
-      "message" : {
-        "text" : "Unrestricted File Upload"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Unrestricted File Upload",
-      "ruleIndex" : 20,
-      "message" : {
-        "text" : "Unrestricted File Upload"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
-      "message" : {
-        "text" : "SQL Injection"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Cross-site Scripting",
-      "ruleIndex" : 2,
-      "message" : {
-        "text" : "Cross-Site Scripting"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
       "ruleId" : "96",
-      "ruleIndex" : 3,
       "message" : {
         "text" : "Hardcoded Password"
       },
@@ -30358,7 +30438,6 @@
       } ]
     }, {
       "ruleId" : "SQL Injection",
-      "ruleIndex" : 5,
       "message" : {
         "text" : "SQL Injection"
       },
@@ -30460,28 +30539,66 @@
       } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "config/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 44,
+            "endLine" : 44,
+            "snippet" : {
+              "text" : "password:"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "content-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 6,
+            "endLine" : 6,
+            "snippet" : {
+              "text" : "password='"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "96",
-      "ruleIndex" : 3,
       "message" : {
         "text" : "Hardcoded Password"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 68,
+            "endLine" : 68,
+            "snippet" : {
+              "text" : "rvalidtokens = /\"[^\"\\\\\\r\\n]*\"|true|false|null|-?(?:\\d\\d*\\.|)\\d+(?:[eE][\\-+]?\\d+|)/g"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -30811,7 +30928,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -30970,7 +31086,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -31053,7 +31168,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -31155,7 +31269,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -31238,7 +31351,6 @@
       } ]
     }, {
       "ruleId" : "DOM Modification HTML Tag",
-      "ruleIndex" : 19,
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -31321,7 +31433,6 @@
       } ]
     }, {
       "ruleId" : "JQuery function that replaces element",
-      "ruleIndex" : 23,
       "message" : {
         "text" : "JQuery function that replaces element"
       },
@@ -31423,7 +31534,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -31544,7 +31654,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -31703,7 +31812,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -31824,7 +31932,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -31907,7 +32014,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -31990,7 +32096,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32073,7 +32178,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32194,7 +32298,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32543,7 +32646,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32664,7 +32766,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32823,7 +32924,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32944,7 +33044,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33065,7 +33164,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33224,7 +33322,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33478,7 +33575,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33561,7 +33657,6 @@
       } ]
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
-      "ruleIndex" : 16,
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33644,7 +33739,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -33727,7 +33821,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
-      "ruleIndex" : 17,
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -33867,7 +33960,6 @@
       } ]
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
-      "ruleIndex" : 24,
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -33969,7 +34061,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionFunction",
-      "ruleIndex" : 26,
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -34128,7 +34219,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionFunction",
-      "ruleIndex" : 26,
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -34458,7 +34548,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
-      "ruleIndex" : 25,
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -34541,7 +34630,6 @@
       } ]
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
-      "ruleIndex" : 25,
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -34776,63 +34864,166 @@
       } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 874,
+            "endLine" : 876,
+            "snippet" : {
+              "text" : "try { top = window.frameElement == null && document.documentElement; } catch(e) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 2021,
+            "endLine" : 2024,
+            "snippet" : {
+              "text" : "try { this[ name ] = undefined; delete this[ name ]; } catch( e ) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 5287,
+            "endLine" : 5290,
+            "snippet" : {
+              "text" : "try { matches.call( div, \"[test!='']:sizzle\" ); rbuggyMatches.push( \"!=\", pseudos ); } catch ( e ) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 5302,
+            "endLine" : 5312,
+            "snippet" : {
+              "text" : "try { var ret = matches.call( elem, expr ); // IE 9's matchesSelector returns false on disconnected nodes if ( ret || disconnectedMatch || // As well, disconnected nodes are said to be in a document // fragment in IE 9 elem.document && elem.document.nodeType !== 11 ) { return ret; } } catch(e) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 5874,
+            "endLine" : 5887,
+            "snippet" : {
+              "text" : "try { for (; i < l; i++ ) { // Remove element nodes and prevent memory leaks elem = this[i] || {}; if ( elem.nodeType === 1 ) { jQuery.cleanData( elem.getElementsByTagName( \"*\" ) ); elem.innerHTML = value; } } elem = 0; // If using innerHTML throws an exception, use the fallback method } catch(e) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 8333,
+            "endLine" : 8335,
+            "snippet" : {
+              "text" : "try { return new window.ActiveXObject( \"Microsoft.XMLHTTP\" ); } catch( e ) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 8407,
+            "endLine" : 8411,
+            "snippet" : {
+              "text" : "try { for ( i in headers ) { xhr.setRequestHeader( i, headers[ i ] ); } } catch( _ ) {}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/jquery.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 8465,
+            "endLine" : 8468,
+            "snippet" : {
+              "text" : "try { responses.text = xhr.responseText; } catch( _ ) { }"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -35086,7 +35277,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -35416,7 +35606,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -35575,7 +35764,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -35677,7 +35865,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -35760,7 +35947,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -35957,7 +36143,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -36363,7 +36548,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -36446,7 +36630,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -36529,7 +36712,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -36935,7 +37117,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -37341,7 +37522,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -37443,7 +37623,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -37583,7 +37762,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -37875,7 +38053,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -38034,7 +38211,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -38155,7 +38331,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -38276,7 +38451,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -38397,7 +38571,6 @@
       } ]
     }, {
       "ruleId" : "Log Forging",
-      "ruleIndex" : 27,
       "message" : {
         "text" : "Log Forging"
       },
@@ -38518,595 +38691,353 @@
       } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 18,
+            "endLine" : 18,
+            "snippet" : {
+              "text" : "try{return new e.ActiveXObject(\"Microsoft.XMLHTTP\")}catch(t){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 18,
+            "endLine" : 18,
+            "snippet" : {
+              "text" : "try{this[e]=t,delete this[e]}catch(n){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 18,
+            "endLine" : 18,
+            "snippet" : {
+              "text" : "try{n=e.frameElement==null&&i.documentElement}catch(s){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 18,
+            "endLine" : 18,
+            "snippet" : {
+              "text" : "try{return new e.XMLHttpRequest}catch(t){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 19,
+            "endLine" : 19,
+            "snippet" : {
+              "text" : "try{u.call(t,\"[test!='']:sizzle\"),s.push(\"!=\",H)}catch(n){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 19,
+            "endLine" : 19,
+            "snippet" : {
+              "text" : "try{return S.apply(s,x.call(h.querySelectorAll(p),0)),s}catch(v){}finally{l||r.removeAttribute(\"id\")}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 20,
+            "endLine" : 20,
+            "snippet" : {
+              "text" : "try{c.text=a.responseText}catch(e){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 20,
+            "endLine" : 20,
+            "snippet" : {
+              "text" : "try{for(u in i)a.setRequestHeader(u,i[u])}catch(f){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 20,
+            "endLine" : 20,
+            "snippet" : {
+              "text" : "try{for(;r<i;r++)n=this[r]||{},n.nodeType===1&&(v.cleanData(n.getElementsByTagName(\"*\")),n.innerHTML=e);n=0}catch(s){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "Empty Default Exception Handler",
-      "ruleIndex" : 18,
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "javascripts/foundation.min.js",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 20,
+            "endLine" : 20,
+            "snippet" : {
+              "text" : "try{f[n]=r}catch(l){}"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-1/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 7,
+            "endLine" : 7,
+            "snippet" : {
+              "text" : "password='"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-2/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 7,
+            "endLine" : 7,
+            "snippet" : {
+              "text" : "password='"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-3/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 46,
+            "endLine" : 46,
+            "snippet" : {
+              "text" : "Password:"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-4/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 9,
+            "endLine" : 9,
+            "snippet" : {
+              "text" : "password="
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 7,
+            "endLine" : 7,
+            "snippet" : {
+              "text" : "password='"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-5/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 45,
+            "endLine" : 45,
+            "snippet" : {
+              "text" : "Password:"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "200",
-      "ruleIndex" : 7,
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
-    }, {
-      "ruleId" : "Information Exposure",
-      "ruleIndex" : 28,
-      "message" : {
-        "text" : "Information Exposure"
-      },
-      "locations" : [ { } ]
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "login-6/index.php",
+            "uriBaseId" : "SRCROOT"
+          },
+          "region" : {
+            "startLine" : 67,
+            "endLine" : 67,
+            "snippet" : {
+              "text" : "Password:"
+            }
+          }
+        }
+      } ]
     }, {
       "ruleId" : "JQueryRule",
-      "ruleIndex" : 0,
       "message" : {
         "text" : "Vulnerable component Any JQuery version 1.0.0"
       },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
-            "uri" : "javascripts\\foundation.min.js",
+            "uri" : "javascripts/foundation.min.js",
             "uriBaseId" : "SRCROOT"
           }
         }
@@ -39137,14 +39068,6 @@
         },
         "fullDescription" : {
           "text" : "Приложение осуществляет недостаточную проверку данных, поступающих от пользователя, что позволяет злоумышленнику сформировать поддельную запись в журнале событий или внедрить в него вредоносный код."
-        }
-      }, {
-        "id" : "Information Exposure",
-        "shortDescription" : {
-          "text" : "Разглашение информации"
-        },
-        "fullDescription" : {
-          "text" : "Разглашение потенциально чувствительной информации, которое может привести к доступу к ней третьих лиц."
         }
       }, {
         "id" : "146",
@@ -39217,14 +39140,6 @@
         },
         "fullDescription" : {
           "text" : "Эксплуатация данной уязвимости позволяет загружать файлы с любым содержимым и/или расширением на сервер. Это дает возможность выполнять произвольный код на целевой системе или проводить атаки, направленные против клиентов («Подмена содержимого», «Межсайтовое выполнение сценариев» и пр.). Рекомендуется проверять расширения файлов, которые загружены при помощи регулярных выражений."
-        }
-      }, {
-        "id" : "Serverfingerprinting",
-        "shortDescription" : {
-          "text" : "Идентификация приложений"
-        },
-        "fullDescription" : {
-          "text" : "Идентификация приложений – техника, используемая злоумышленниками для сбора максимального количества информации о веб-приложении. Полученная информация может быть использована для повышения эффективности последующих атак."
         }
       }, {
         "id" : "101",
