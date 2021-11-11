@@ -7,183 +7,270 @@
         "organization" : "Positive Technologies",
         "informationUri" : "https://www.ptsecurity.com/ww-en/products/ai/",
         "rules" : [ {
-          "id" : "DC-FP-CVE-2019-11358",
-          "name" : "Vulnerable component jquery 1.8.2 (CVE-2019-11358)",
+          "id" : "SQL Injection",
+          "name" : "SQL Injection",
           "fullDescription" : {
-            "text" : "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
-          }
-        }, {
-          "id" : "DC-FP-CVE-2020-11022",
-          "name" : "Vulnerable component jquery 1.8.2 (CVE-2020-11022)",
-          "fullDescription" : {
-            "text" : "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
-          }
-        }, {
-          "id" : "Empty Default Exception Handler",
-          "name" : "Empty Default Exception Handler",
-          "fullDescription" : {
-            "text" : "Poor Error Handling: Empty Default Exception Handler. Ignoring an exception can cause the program to overlook unexpected states and conditions."
-          }
-        }, {
-          "id" : "147",
-          "name" : "Sensitive Cookie in HTTPS Session Without ‘Httponly’ Attribute",
-          "fullDescription" : {
-            "text" : "\"Httponly\" attribute is not set for cookie and it causes client-side script has ability to extract cookie.  An attacker may intercept cookie using XSS attack. It is recommended to set this attribute for valuable cookie variables. Cookie with this attribute cannot be accessed through client side script."
-          }
-        }, {
-          "id" : "Unrestricted File Upload",
-          "name" : "Unrestricted File Upload",
-          "fullDescription" : {
-            "text" : "Unrestricted File Upload vulnerability allows attackers to upload files with arbitrary contents and/or extension to a target server and execute  arbitrary code or conduct attacks against clients (Content Spoofing, Cross-Site Scripting, etc.). We recommend you to use regular expressions for file extension checks."
-          }
-        }, {
-          "id" : "98",
-          "name" : "Insecure Transport",
-          "fullDescription" : {
-            "text" : "An unprotected transport used for data transferring on application level makes it possible to conduct a \"man-in-the-middle\" attack."
+            "text" : "The application does not sufficiently validate user input that allows an attacker to manipulate SQL query logic by injecting arbitrary SQL operators."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
           }
         }, {
           "id" : "200",
           "name" : "Information Exposure Through Static Content Or String Literals",
           "fullDescription" : {
             "text" : "HTML documents or string constants may contain sensitive information. The presence of such information in these places must be considered."
-          }
-        }, {
-          "id" : "JQuery Unsafe functions for DOM",
-          "name" : "JQuery Unsafe functions for DOM",
-          "fullDescription" : {
-            "text" : "Unsafe functions add HTML code for DOM structure."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
           }
         }, {
           "id" : "Arbitrary File Modification",
           "name" : "Arbitrary File Modification",
           "fullDescription" : {
             "text" : "Arbitrary Files Modification is a vulnerability that allows an attacker to modify the contents of server files. It may result in denial of service, application logic bypass, arbitrary code execution, etc."
-          }
-        }, {
-          "id" : "SQL Injection",
-          "name" : "SQL Injection",
-          "fullDescription" : {
-            "text" : "The application does not sufficiently validate user input that allows an attacker to manipulate SQL query logic by injecting arbitrary SQL operators."
-          }
-        }, {
-          "id" : "146",
-          "name" : "Sensitive Cookie in HTTPS Session Without ‘Secure’ Attribute",
-          "fullDescription" : {
-            "text" : "'Secure' attribute is not set for cookie and it causes browser to use this cookie both for secured connection over HTTPS and unsecured connection over HTTP. An attacker may intercept cookie using man-in-the-middle method. It is recommended to set this attribute for valuable cookie variables and transfer authorization data only over HTTPS."
-          }
-        }, {
-          "id" : "DOM Modification HTML Tag",
-          "name" : "DOM Modification HTML Tag",
-          "fullDescription" : {
-            "text" : "Adds a string inside HTML tag."
-          }
-        }, {
-          "id" : "162",
-          "name" : "Use of Uninitialized Variable",
-          "fullDescription" : {
-            "text" : "The code uses a variable that has not been initialized, leading to unpredictable or unintended results. In some languages such as C and C++, stack variables are not initialized by default. They generally contain junk data with the contents of stack memory before the function was invoked. An attacker can sometimes control or read these contents. In other languages or conditions, a variable that is not explicitly initialized can be given a default value that has security implications, depending on the logic of the program. The presence of an uninitialized variable can sometimes indicate a typographic error in the code."
-          }
-        }, {
-          "id" : "Server-Side Request Forgery",
-          "name" : "Server-Side Request Forgery",
-          "fullDescription" : {
-            "text" : "An application does not sufficiently validate a destination address in URL or HTTP message before sending a response. Exploiting the vulnerability, an attacker can send requests to restricted servers (for example, computers  in local networks). This can lead to sensitive data and application source code disclosure, denial of service, etc."
-          }
-        }, {
-          "id" : "DC-FP-CVE-2015-9251",
-          "name" : "Vulnerable component jquery 1.8.2 (CVE-2015-9251)",
-          "fullDescription" : {
-            "text" : "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed."
-          }
-        }, {
-          "id" : "JQuery HTML Inside DOM",
-          "name" : "JQuery HTML Inside DOM",
-          "fullDescription" : {
-            "text" : "Selector vulnerability, adding HTML code in page's DOM structure."
-          }
-        }, {
-          "id" : "Arbitrary File Creation",
-          "name" : "Arbitrary File Creation",
-          "fullDescription" : {
-            "text" : "If a resource privileges do not meet the principle of minimal privileges, information disclosure or resource content modification is possible. Exploiting the vulnerability, an attacker can execute arbitrary code, cause denial of service, etc."
-          }
-        }, {
-          "id" : "104",
-          "name" : "System Information Leak",
-          "fullDescription" : {
-            "text" : "Debug pages or messages, error descriptions, stack tracing, etc. in productive systems allows attackers to obtain information about application internals that is useful for conducting attacks."
-          }
-        }, {
-          "id" : "ServerSideInjectionFunction",
-          "name" : "Server Side Injection - new Function()",
-          "fullDescription" : {
-            "text" : "User controlled data in 'new Function()' can result in Server Side Injection (SSI) or Remote Code Execution (RCE)."
-          }
-        }, {
-          "id" : "JQueryRule",
-          "name" : "Vulnerable component Any JQuery version 1.0.0",
-          "fullDescription" : {
-            "text" : "JQuery use strictly prohibited"
-          }
-        }, {
-          "id" : "JQuery function that replaces element",
-          "name" : "JQuery function that replaces element",
-          "fullDescription" : {
-            "text" : "Function that replaces element by new."
-          }
-        }, {
-          "id" : "101",
-          "name" : "Weak Cryptographic Hash",
-          "fullDescription" : {
-            "text" : "Vulnerable hashing functions in your application can lead to predictable hash collisions or hash reverse attacks. Cryptographic hashing guarantee that hash collisions are unlikely, and hash reversing is difficult to conduct."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
           }
         }, {
           "id" : "ServerSideInjectionSetTimeout",
           "name" : "Server Side Injection - setTimeout()",
           "fullDescription" : {
             "text" : "User controlled data in 'setTimeout()' can result in Server Side Injection (SSI) or Remote Code Execution (RCE)."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
           }
         }, {
-          "id" : "JQuery Wrap Element to HTML",
-          "name" : "JQuery Wrap Element to HTML",
+          "id" : "98",
+          "name" : "Insecure Transport",
           "fullDescription" : {
-            "text" : "Wrap element to HTML code."
+            "text" : "An unprotected transport used for data transferring on application level makes it possible to conduct a \"man-in-the-middle\" attack."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
           }
         }, {
-          "id" : "96",
-          "name" : "Hardcoded Password",
+          "id" : "JQueryRule",
+          "name" : "Vulnerable component Any JQuery version 1.0.0",
           "fullDescription" : {
-            "text" : "Hardcoded or empty passwords could lead to system compromising that is hard to eliminate."
+            "text" : "JQuery use strictly prohibited"
+          },
+          "properties" : {
+            "tags" : [ "SCA" ]
           }
         }, {
-          "id" : "DC-FP-CVE-2012-6708",
-          "name" : "Vulnerable component jquery 1.8.2 (CVE-2012-6708)",
+          "id" : "147",
+          "name" : "Sensitive Cookie in HTTPS Session Without ‘Httponly’ Attribute",
           "fullDescription" : {
-            "text" : "jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input to be HTML if it explicitly starts with the '<' character, limiting exploitability only to attackers who can control the beginning of a string, which is far less common."
+            "text" : "\"Httponly\" attribute is not set for cookie and it causes client-side script has ability to extract cookie.  An attacker may intercept cookie using XSS attack. It is recommended to set this attribute for valuable cookie variables. Cookie with this attribute cannot be accessed through client side script."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
           }
         }, {
-          "id" : "Log Forging",
-          "name" : "Log Forging",
+          "id" : "Empty Default Exception Handler",
+          "name" : "Empty Default Exception Handler",
           "fullDescription" : {
-            "text" : "An application does not sufficiently validate user input that allows an attacker to create a specially malformed item for a log file or inject malware into it."
+            "text" : "Poor Error Handling: Empty Default Exception Handler. Ignoring an exception can cause the program to overlook unexpected states and conditions."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
           }
         }, {
           "id" : "Cross-site Scripting",
           "name" : "Cross-Site Scripting",
           "fullDescription" : {
             "text" : "The application does not sufficiently validate user input that allows attackers to to execute arbitrary code in the context of victim's browser bypassing the Same Origin Policy (SOP)."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "JQuery HTML Inside DOM",
+          "name" : "JQuery HTML Inside DOM",
+          "fullDescription" : {
+            "text" : "Selector vulnerability, adding HTML code in page's DOM structure."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "Server-Side Request Forgery",
+          "name" : "Server-Side Request Forgery",
+          "fullDescription" : {
+            "text" : "An application does not sufficiently validate a destination address in URL or HTTP message before sending a response. Exploiting the vulnerability, an attacker can send requests to restricted servers (for example, computers  in local networks). This can lead to sensitive data and application source code disclosure, denial of service, etc."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "96",
+          "name" : "Hardcoded Password",
+          "fullDescription" : {
+            "text" : "Hardcoded or empty passwords could lead to system compromising that is hard to eliminate."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
+          }
+        }, {
+          "id" : "DC-FP-CVE-2012-6708",
+          "name" : "Vulnerable component jquery 1.8.2 (CVE-2012-6708)",
+          "fullDescription" : {
+            "text" : "jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input to be HTML if it explicitly starts with the '<' character, limiting exploitability only to attackers who can control the beginning of a string, which is far less common."
+          },
+          "properties" : {
+            "tags" : [ "SCA" ]
           }
         }, {
           "id" : "DC-FP-CVE-2020-11023",
           "name" : "Vulnerable component jquery 1.8.2 (CVE-2020-11023)",
           "fullDescription" : {
             "text" : "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+          },
+          "properties" : {
+            "tags" : [ "SCA" ]
+          }
+        }, {
+          "id" : "DC-FP-CVE-2020-11022",
+          "name" : "Vulnerable component jquery 1.8.2 (CVE-2020-11022)",
+          "fullDescription" : {
+            "text" : "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+          },
+          "properties" : {
+            "tags" : [ "SCA" ]
+          }
+        }, {
+          "id" : "ServerSideInjectionFunction",
+          "name" : "Server Side Injection - new Function()",
+          "fullDescription" : {
+            "text" : "User controlled data in 'new Function()' can result in Server Side Injection (SSI) or Remote Code Execution (RCE)."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "Arbitrary File Creation",
+          "name" : "Arbitrary File Creation",
+          "fullDescription" : {
+            "text" : "If a resource privileges do not meet the principle of minimal privileges, information disclosure or resource content modification is possible. Exploiting the vulnerability, an attacker can execute arbitrary code, cause denial of service, etc."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "DOM Modification HTML Tag",
+          "name" : "DOM Modification HTML Tag",
+          "fullDescription" : {
+            "text" : "Adds a string inside HTML tag."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "JQuery Wrap Element to HTML",
+          "name" : "JQuery Wrap Element to HTML",
+          "fullDescription" : {
+            "text" : "Wrap element to HTML code."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "Log Forging",
+          "name" : "Log Forging",
+          "fullDescription" : {
+            "text" : "An application does not sufficiently validate user input that allows an attacker to create a specially malformed item for a log file or inject malware into it."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "DC-FP-CVE-2015-9251",
+          "name" : "Vulnerable component jquery 1.8.2 (CVE-2015-9251)",
+          "fullDescription" : {
+            "text" : "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed."
+          },
+          "properties" : {
+            "tags" : [ "SCA" ]
+          }
+        }, {
+          "id" : "104",
+          "name" : "System Information Leak",
+          "fullDescription" : {
+            "text" : "Debug pages or messages, error descriptions, stack tracing, etc. in productive systems allows attackers to obtain information about application internals that is useful for conducting attacks."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
+          }
+        }, {
+          "id" : "101",
+          "name" : "Weak Cryptographic Hash",
+          "fullDescription" : {
+            "text" : "Vulnerable hashing functions in your application can lead to predictable hash collisions or hash reverse attacks. Cryptographic hashing guarantee that hash collisions are unlikely, and hash reversing is difficult to conduct."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
+          }
+        }, {
+          "id" : "JQuery Unsafe functions for DOM",
+          "name" : "JQuery Unsafe functions for DOM",
+          "fullDescription" : {
+            "text" : "Unsafe functions add HTML code for DOM structure."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "146",
+          "name" : "Sensitive Cookie in HTTPS Session Without ‘Secure’ Attribute",
+          "fullDescription" : {
+            "text" : "'Secure' attribute is not set for cookie and it causes browser to use this cookie both for secured connection over HTTPS and unsecured connection over HTTP. An attacker may intercept cookie using man-in-the-middle method. It is recommended to set this attribute for valuable cookie variables and transfer authorization data only over HTTPS."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
+          }
+        }, {
+          "id" : "DC-FP-CVE-2019-11358",
+          "name" : "Vulnerable component jquery 1.8.2 (CVE-2019-11358)",
+          "fullDescription" : {
+            "text" : "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
+          },
+          "properties" : {
+            "tags" : [ "SCA" ]
+          }
+        }, {
+          "id" : "JQuery function that replaces element",
+          "name" : "JQuery function that replaces element",
+          "fullDescription" : {
+            "text" : "Function that replaces element by new."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
+          }
+        }, {
+          "id" : "162",
+          "name" : "Use of Uninitialized Variable",
+          "fullDescription" : {
+            "text" : "The code uses a variable that has not been initialized, leading to unpredictable or unintended results. In some languages such as C and C++, stack variables are not initialized by default. They generally contain junk data with the contents of stack memory before the function was invoked. An attacker can sometimes control or read these contents. In other languages or conditions, a variable that is not explicitly initialized can be given a default value that has security implications, depending on the logic of the program. The presence of an uninitialized variable can sometimes indicate a typographic error in the code."
+          },
+          "properties" : {
+            "tags" : [ "WEAKNESS" ]
+          }
+        }, {
+          "id" : "Unrestricted File Upload",
+          "name" : "Unrestricted File Upload",
+          "fullDescription" : {
+            "text" : "Unrestricted File Upload vulnerability allows attackers to upload files with arbitrary contents and/or extension to a target server and execute  arbitrary code or conduct attacks against clients (Content Spoofing, Cross-Site Scripting, etc.). We recommend you to use regular expressions for file extension checks."
+          },
+          "properties" : {
+            "tags" : [ "VULNERABILITY" ]
           }
         } ],
         "supportedTaxonomies" : [ {
           "name" : "CWE",
-          "guid" : "55a1a708-e533-4575-a9c5-d56724fb98a9"
+          "guid" : "94d885e2-7c29-4a50-81aa-e07d32e5ca79"
         } ]
       }
     },
@@ -203,7 +290,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Server-Side Request Forgery",
@@ -290,7 +377,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -376,7 +463,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -481,7 +568,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -586,7 +673,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "96",
@@ -610,7 +697,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -715,7 +802,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -820,7 +907,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "147",
@@ -845,7 +932,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -950,7 +1037,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -1055,7 +1142,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "96",
@@ -1080,7 +1167,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "96",
@@ -1104,7 +1191,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -1247,7 +1334,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -1390,7 +1477,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -1533,7 +1620,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "104",
@@ -1558,7 +1645,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -1583,7 +1670,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -1608,7 +1695,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -1633,7 +1720,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -1658,7 +1745,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "98",
@@ -1683,7 +1770,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -1788,7 +1875,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "96",
@@ -1813,7 +1900,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -1838,7 +1925,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "146",
@@ -1863,7 +1950,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -1888,7 +1975,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -1913,7 +2000,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -1938,7 +2025,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -1963,7 +2050,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "147",
@@ -1988,7 +2075,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -2013,7 +2100,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -2038,7 +2125,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -2144,7 +2231,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "104",
@@ -2169,7 +2256,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -2193,7 +2280,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -2218,7 +2305,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -2243,7 +2330,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -2268,7 +2355,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -2293,7 +2380,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "101",
@@ -2317,7 +2404,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -2342,7 +2429,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -2448,7 +2535,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "200",
@@ -2473,7 +2560,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2015-9251",
@@ -2490,7 +2577,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2012-6708",
@@ -2507,7 +2594,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2019-11358",
@@ -2524,7 +2611,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2020-11023",
@@ -2541,7 +2628,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2020-11022",
@@ -2558,7 +2645,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -2583,7 +2670,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -2727,7 +2814,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -2814,7 +2901,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -2919,7 +3006,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "104",
@@ -2944,7 +3031,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "104",
@@ -2969,7 +3056,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -3074,7 +3161,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2015-9251",
@@ -3091,7 +3178,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2012-6708",
@@ -3108,7 +3195,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2019-11358",
@@ -3125,7 +3212,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2020-11023",
@@ -3142,7 +3229,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DC-FP-CVE-2020-11022",
@@ -3159,7 +3246,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -3265,7 +3352,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -3371,7 +3458,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -3477,7 +3564,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -3582,7 +3669,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -3840,7 +3927,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "98",
@@ -3865,7 +3952,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -4066,7 +4153,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -4091,7 +4178,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -4254,7 +4341,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -4360,7 +4447,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -4465,7 +4552,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -4490,7 +4577,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -4515,7 +4602,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -4540,7 +4627,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
@@ -4627,7 +4714,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
@@ -4714,7 +4801,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -4801,7 +4888,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -4888,7 +4975,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
@@ -5013,7 +5100,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -5195,7 +5282,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -5337,7 +5424,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -5479,7 +5566,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -5566,7 +5653,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -5653,7 +5740,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -5795,7 +5882,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -6034,7 +6121,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -6121,7 +6208,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -6225,7 +6312,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -6540,7 +6627,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -6798,7 +6885,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -7056,7 +7143,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
@@ -7143,7 +7230,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -7249,7 +7336,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -7355,7 +7442,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -7460,7 +7547,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -7565,7 +7652,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -7670,7 +7757,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -7812,7 +7899,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -7837,7 +7924,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -7979,7 +8066,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -8004,7 +8091,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -8146,7 +8233,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -8250,7 +8337,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -8275,7 +8362,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -8300,7 +8387,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -8463,7 +8550,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
@@ -8550,7 +8637,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Unrestricted File Upload",
@@ -8637,7 +8724,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
@@ -8724,7 +8811,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Arbitrary File Creation",
@@ -8811,7 +8898,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Arbitrary File Modification",
@@ -8898,7 +8985,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -8984,7 +9071,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -9128,7 +9215,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -9443,7 +9530,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -9739,7 +9826,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -10016,7 +10103,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -10350,7 +10437,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -10855,7 +10942,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -11075,7 +11162,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -11276,7 +11363,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -11838,7 +11925,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -11982,7 +12069,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -12430,7 +12517,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -12536,7 +12623,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -12718,7 +12805,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -13280,7 +13367,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -13557,7 +13644,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -14062,7 +14149,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -14510,7 +14597,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -14882,7 +14969,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -15235,7 +15322,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -15626,7 +15713,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -15960,7 +16047,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -16332,7 +16419,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -16666,7 +16753,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -16981,7 +17068,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -17296,7 +17383,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -17421,7 +17508,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -17831,7 +17918,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -17918,7 +18005,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -18119,7 +18206,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -18263,7 +18350,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -18350,7 +18437,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -18532,7 +18619,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -18771,7 +18858,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -18877,7 +18964,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -19059,7 +19146,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -19184,7 +19271,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -19308,7 +19395,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -19547,7 +19634,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -19748,7 +19835,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -19892,7 +19979,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -20131,7 +20218,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -20446,7 +20533,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -20647,7 +20734,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -20771,7 +20858,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -21029,7 +21116,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -21211,7 +21298,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -21374,7 +21461,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -21537,7 +21624,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -21738,7 +21825,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -22015,7 +22102,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -22102,7 +22189,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -22189,7 +22276,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -22276,7 +22363,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -22477,7 +22564,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -22564,7 +22651,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -22860,7 +22947,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -22947,7 +23034,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery function that replaces element",
@@ -23376,7 +23463,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -23482,7 +23569,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -23702,7 +23789,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery function that replaces element",
@@ -23808,7 +23895,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -23951,7 +24038,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -24094,7 +24181,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -24237,7 +24324,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -24342,7 +24429,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -24448,7 +24535,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -24668,7 +24755,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -25040,7 +25127,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -25127,7 +25214,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -25214,7 +25301,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -25320,7 +25407,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -25464,7 +25551,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -25570,7 +25657,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -25714,7 +25801,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -25819,7 +25906,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -25925,7 +26012,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -26030,7 +26117,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -26172,7 +26259,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -26276,7 +26363,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Arbitrary File Creation",
@@ -26363,7 +26450,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Unrestricted File Upload",
@@ -26450,7 +26537,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Arbitrary File Modification",
@@ -26537,7 +26624,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -26623,7 +26710,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Arbitrary File Creation",
@@ -26710,7 +26797,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Arbitrary File Creation",
@@ -26797,7 +26884,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Unrestricted File Upload",
@@ -26884,7 +26971,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Unrestricted File Upload",
@@ -26971,7 +27058,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Arbitrary File Modification",
@@ -27058,7 +27145,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Arbitrary File Modification",
@@ -27145,7 +27232,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -27231,7 +27318,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -27317,7 +27404,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
@@ -27518,7 +27605,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -27624,7 +27711,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -27767,7 +27854,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -27910,7 +27997,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -28053,7 +28140,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "Cross-site Scripting",
@@ -28158,7 +28245,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
@@ -28416,7 +28503,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
@@ -28541,7 +28628,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
@@ -28628,7 +28715,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
@@ -28867,7 +28954,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
@@ -29125,7 +29212,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
@@ -29459,7 +29546,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
@@ -29622,7 +29709,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -29727,7 +29814,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -29984,7 +30071,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -30070,7 +30157,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -30232,7 +30319,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -30318,7 +30405,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -30461,7 +30548,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -30604,7 +30691,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -30691,7 +30778,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -30778,7 +30865,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "98",
@@ -30803,7 +30890,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
@@ -30928,7 +31015,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "162",
@@ -30953,7 +31040,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -31191,7 +31278,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -31315,7 +31402,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Server-Side Request Forgery",
@@ -31402,7 +31489,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "96",
@@ -31470,7 +31557,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "SQL Injection",
@@ -31575,7 +31662,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+        "tags" : [ "FROM_ENTRYPOINT" ]
       }
     }, {
       "ruleId" : "200",
@@ -31600,7 +31687,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -31625,7 +31712,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "96",
@@ -31650,7 +31737,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -31983,7 +32070,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -32145,7 +32232,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -32231,7 +32318,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -32336,7 +32423,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -32422,7 +32509,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
@@ -32509,7 +32596,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery function that replaces element",
@@ -32615,7 +32702,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -32740,7 +32827,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -32903,7 +32990,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -33028,7 +33115,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -33115,7 +33202,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -33202,7 +33289,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -33289,7 +33376,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -33414,7 +33501,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -33767,7 +33854,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -33892,7 +33979,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -34055,7 +34142,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -34180,7 +34267,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -34305,7 +34392,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -34468,7 +34555,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -34726,7 +34813,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -34813,7 +34900,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
@@ -34900,7 +34987,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -34987,7 +35074,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
@@ -35131,7 +35218,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
@@ -35237,7 +35324,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
@@ -35400,7 +35487,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
@@ -35734,7 +35821,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
@@ -35821,7 +35908,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
@@ -36060,7 +36147,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -36085,7 +36172,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -36110,7 +36197,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -36135,7 +36222,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -36160,7 +36247,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -36185,7 +36272,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -36210,7 +36297,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -36235,7 +36322,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -36260,7 +36347,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -36517,7 +36604,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -36850,7 +36937,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -37012,7 +37099,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -37117,7 +37204,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -37203,7 +37290,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -37403,7 +37490,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -37812,7 +37899,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -37898,7 +37985,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -37984,7 +38071,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -38393,7 +38480,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -38802,7 +38889,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -38907,7 +38994,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -39050,7 +39137,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -39345,7 +39432,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -39507,7 +39594,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -39631,7 +39718,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -39755,7 +39842,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -39879,7 +39966,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Log Forging",
@@ -40003,7 +40090,7 @@
         } ]
       } ],
       "properties" : {
-        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+        "tags" : [ "FROM_PUBLICPROTECTED" ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40028,7 +40115,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40053,7 +40140,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40078,7 +40165,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40103,7 +40190,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40128,7 +40215,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40153,7 +40240,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40178,7 +40265,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40203,7 +40290,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40228,7 +40315,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "Empty Default Exception Handler",
@@ -40253,7 +40340,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -40278,7 +40365,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -40303,7 +40390,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -40328,7 +40415,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -40353,7 +40440,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -40378,7 +40465,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -40403,7 +40490,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "200",
@@ -40428,7 +40515,7 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "WEAKNESS" ]
+        "tags" : [ ]
       }
     }, {
       "ruleId" : "JQueryRule",
@@ -40446,184 +40533,271 @@
         }
       } ],
       "properties" : {
-        "tags" : [ "SCA" ]
+        "tags" : [ ]
       }
     } ],
     "translations" : [ {
       "name" : "Positive Technologies Application Inspector",
       "rules" : [ {
-        "id" : "Arbitrary File Creation",
-        "name" : "Создание произвольного файла",
+        "id" : "DOM Modification HTML Tag",
+        "name" : "DOM модификация HTML тега",
         "fullDescription" : {
-          "text" : "Веб-приложение может использовать данные, переданные пользователем, при формировании пути создаваемого файла и его содержимого. Злоумышленник, используя эту уязвимость, может провести атаки направленные на выполнение произвольного кода, отказ в обслуживании и т.д."
-        }
-      }, {
-        "id" : "DC-FP-CVE-2020-11022",
-        "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2020-11022)",
-        "fullDescription" : {
-          "text" : "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
-        }
-      }, {
-        "id" : "Arbitrary File Modification",
-        "name" : "Изменение произвольных файлов",
-        "fullDescription" : {
-          "text" : "Уязвимость позволяет злоумышленнику изменить содержимое файлов на сервере. Последствиями эксплуатации может быть отказ в обслуживании, изменение логики приложений, выполнение произвольного кода и оказание других воздействий на систему."
-        }
-      }, {
-        "id" : "146",
-        "name" : "Передача Cookie через HTTPS сессию без атрибута 'Secure'",
-        "fullDescription" : {
-          "text" : "При установке значений cookie не используется атрибут \"secure\", в результате чего браузер будет использовать данные Cookie не только для защищенного соединения через HTTPS, но и для незащищенного соединения по протоколу HTTP. Злоумышленник, имеющий возможность провести атаку типа «человек посередине», может перехватить данные cookie. Рекомендуется устанавливать этот атрибут у значимых Cookie-переменных и передавать авторизационные данные приложения только по протоколу HTTPS."
+          "text" : "Добавляет строку внутрь HTML тега."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
         }
       }, {
         "id" : "104",
         "name" : "Утечка отладочной информации",
         "fullDescription" : {
           "text" : "Использование отладочных страниц или сообщений, описаний ошибок, трассировок стека и других подобных данных в системах, находящихся в промышленной эксплуатации, раскрывает атакующему информацию о внутреннем устройстве приложения, которая может быть использована для планирования успешной атаки."
-        }
-      }, {
-        "id" : "ServerSideInjectionFunction",
-        "name" : "Инъекция на стороне сервера - new Function()",
-        "fullDescription" : {
-          "text" : "Ситуация, когда в \"new Function()\" попадают данные, контролируемые атакующим, может привести к инъекции на стороне сервера (SSI) или удалённому выполнению кода (RCE)."
-        }
-      }, {
-        "id" : "Log Forging",
-        "name" : "Подделка записи файла журнала",
-        "fullDescription" : {
-          "text" : "Приложение осуществляет недостаточную проверку данных, поступающих от пользователя, что позволяет злоумышленнику сформировать поддельную запись в журнале событий или внедрить в него вредоносный код."
-        }
-      }, {
-        "id" : "Cross-site Scripting",
-        "name" : "Межсайтовое выполнение сценариев",
-        "fullDescription" : {
-          "text" : "В приложении осуществляется недостаточная обработка потенциально опасных данных, что позволяет выполнить произвольный код в браузере пользователя в обход политики единого источника (SOP)."
-        }
-      }, {
-        "id" : "Unrestricted File Upload",
-        "name" : "Загрузка произвольного файла",
-        "fullDescription" : {
-          "text" : "Эксплуатация данной уязвимости позволяет загружать файлы с любым содержимым и/или расширением на сервер. Это дает возможность выполнять произвольный код на целевой системе или проводить атаки, направленные против клиентов («Подмена содержимого», «Межсайтовое выполнение сценариев» и пр.). Рекомендуется проверять расширения файлов, которые загружены при помощи регулярных выражений."
-        }
-      }, {
-        "id" : "162",
-        "name" : "Неинициализированная переменная",
-        "fullDescription" : {
-          "text" : "В коде программы используется неинициализированная переменная, что может привести к непредсказуемым последствиям. \nВ некоторых языках программирования (например, C и C++) переменные, расположенные в стеке, не инициализируются по умолчанию. Как правило, такие переменные содержат ненужные данные из памяти стека. В некоторых случаях злоумышленник может контролировать или прочитать содержимое данных переменных. \nВ других языках явно не инициализированной переменной может быть присвоено значение по умолчанию, что, в зависимости от логики программы, может сказаться на безопасности.\nВ некоторых случаях наличие неинициализированной переменной может указывать на опечатки в программном коде."
-        }
-      }, {
-        "id" : "Empty Default Exception Handler",
-        "name" : "Пустой блок обработки исключений",
-        "fullDescription" : {
-          "text" : "Слабая обработка ошибок: пустой блок обработки исключений. Игнорирование исключения может заставить программу не учитывать неожиданные состояния и условия."
-        }
-      }, {
-        "id" : "JQuery Unsafe functions for DOM",
-        "name" : "JQuery небезопасная функция для DOM",
-        "fullDescription" : {
-          "text" : "Небезопасная функция, добавляющая HTML код в DOM структуру."
-        }
-      }, {
-        "id" : "96",
-        "name" : "Жестко заданный пароль",
-        "fullDescription" : {
-          "text" : "Использование жестко заданных или пустых паролей может привести к компрометации системы, последствия которой тяжело устранить."
-        }
-      }, {
-        "id" : "Server-Side Request Forgery",
-        "name" : "Подделка запроса сервера",
-        "fullDescription" : {
-          "text" : "Приложение, получив URL-адрес или HTTP-сообщение, осуществляет недостаточную проверку адреса назначения перед отправкой запроса. Используя данный недостаток, злоумышленник может отправлять запросы на серверы с ограниченным доступом (например, компьютеры в локальной сети), что приводит к разглашению важных данных, получению злоумышленником исходных кодов приложения, к отказу в обслуживании и т.д."
-        }
-      }, {
-        "id" : "DC-FP-CVE-2015-9251",
-        "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2015-9251)",
-        "fullDescription" : {
-          "text" : "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed."
-        }
-      }, {
-        "id" : "JQuery function that replaces element",
-        "name" : "JQuery функция заменяющая элемент",
-        "fullDescription" : {
-          "text" : "Функция, заменяющая элемент на новый."
-        }
-      }, {
-        "id" : "DC-FP-CVE-2020-11023",
-        "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2020-11023)",
-        "fullDescription" : {
-          "text" : "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
-        }
-      }, {
-        "id" : "98",
-        "name" : "Незащищенная передача данных",
-        "fullDescription" : {
-          "text" : "Использование незащищенного протокола для передачи данных на прикладном уровне создает возможность для проведения атак типа «человек-посередине»."
-        }
-      }, {
-        "id" : "SQL Injection",
-        "name" : "Внедрение SQL-кода",
-        "fullDescription" : {
-          "text" : "В приложении осуществляется недостаточная обработка потенциально опасных данных, что позволяет злоумышленнику изменить логику запроса к БД, используя произвольные SQL-операторы."
-        }
-      }, {
-        "id" : "JQueryRule",
-        "name" : "Уязвимый компонент Any JQuery version 1.0.0",
-        "fullDescription" : {
-          "text" : "JQuery use strictly prohibited"
-        }
-      }, {
-        "id" : "147",
-        "name" : "Передача Cookie через HTTPS сессию без атрибута 'Httponly'",
-        "fullDescription" : {
-          "text" : "При установке значений cookie не используется атрибут \"Httponly\", в результате чего значение cookie будет доступно для скриптов со стороны клиента. Злоумышленник, имеющий возможность провести атаку типа XSS, может перехватить данные cookie.  Рекомендуется устанавливать этот атрибут у значимых Cookie-переменных. Cookie с таким параметром передаётся только в заголовках, оно никак не доступно из JavaScript."
-        }
-      }, {
-        "id" : "DC-FP-CVE-2012-6708",
-        "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2012-6708)",
-        "fullDescription" : {
-          "text" : "jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input to be HTML if it explicitly starts with the '<' character, limiting exploitability only to attackers who can control the beginning of a string, which is far less common."
-        }
-      }, {
-        "id" : "200",
-        "name" : "Раскрытие информации в статических файлах или константах",
-        "fullDescription" : {
-          "text" : "HTML документы или строковые константы могут содержать чувствительную информацию. Стоит ограничить присутствие такой информации в этих местах"
-        }
-      }, {
-        "id" : "JQuery HTML Inside DOM",
-        "name" : "JQuery добавление HTML кода в DOM",
-        "fullDescription" : {
-          "text" : "Уязвимость селектора, добавляющая HTML код в DOM структуру страницы."
-        }
-      }, {
-        "id" : "DOM Modification HTML Tag",
-        "name" : "DOM модификация HTML тега",
-        "fullDescription" : {
-          "text" : "Добавляет строку внутрь HTML тега."
-        }
-      }, {
-        "id" : "ServerSideInjectionSetTimeout",
-        "name" : "Инъекция на стороне сервера - setTimeout()",
-        "fullDescription" : {
-          "text" : "Ситуация, когда в \"setTimeout()\" попадают данные, контролируемые атакующим, может привести к инъекции на стороне сервера (SSI) или удалённому выполнению кода (RCE)."
-        }
-      }, {
-        "id" : "JQuery Wrap Element to HTML",
-        "name" : "JQuery заключение элемента в код HTML",
-        "fullDescription" : {
-          "text" : "Заключает указанный элемент в html код."
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
         }
       }, {
         "id" : "DC-FP-CVE-2019-11358",
         "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2019-11358)",
         "fullDescription" : {
           "text" : "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
+        },
+        "properties" : {
+          "tags" : [ "SCA" ]
+        }
+      }, {
+        "id" : "162",
+        "name" : "Неинициализированная переменная",
+        "fullDescription" : {
+          "text" : "В коде программы используется неинициализированная переменная, что может привести к непредсказуемым последствиям. \nВ некоторых языках программирования (например, C и C++) переменные, расположенные в стеке, не инициализируются по умолчанию. Как правило, такие переменные содержат ненужные данные из памяти стека. В некоторых случаях злоумышленник может контролировать или прочитать содержимое данных переменных. \nВ других языках явно не инициализированной переменной может быть присвоено значение по умолчанию, что, в зависимости от логики программы, может сказаться на безопасности.\nВ некоторых случаях наличие неинициализированной переменной может указывать на опечатки в программном коде."
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
+        }
+      }, {
+        "id" : "146",
+        "name" : "Передача Cookie через HTTPS сессию без атрибута 'Secure'",
+        "fullDescription" : {
+          "text" : "При установке значений cookie не используется атрибут \"secure\", в результате чего браузер будет использовать данные Cookie не только для защищенного соединения через HTTPS, но и для незащищенного соединения по протоколу HTTP. Злоумышленник, имеющий возможность провести атаку типа «человек посередине», может перехватить данные cookie. Рекомендуется устанавливать этот атрибут у значимых Cookie-переменных и передавать авторизационные данные приложения только по протоколу HTTPS."
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
+        }
+      }, {
+        "id" : "DC-FP-CVE-2020-11022",
+        "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2020-11022)",
+        "fullDescription" : {
+          "text" : "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+        },
+        "properties" : {
+          "tags" : [ "SCA" ]
+        }
+      }, {
+        "id" : "JQuery function that replaces element",
+        "name" : "JQuery функция заменяющая элемент",
+        "fullDescription" : {
+          "text" : "Функция, заменяющая элемент на новый."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "Log Forging",
+        "name" : "Подделка записи файла журнала",
+        "fullDescription" : {
+          "text" : "Приложение осуществляет недостаточную проверку данных, поступающих от пользователя, что позволяет злоумышленнику сформировать поддельную запись в журнале событий или внедрить в него вредоносный код."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "DC-FP-CVE-2015-9251",
+        "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2015-9251)",
+        "fullDescription" : {
+          "text" : "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed."
+        },
+        "properties" : {
+          "tags" : [ "SCA" ]
+        }
+      }, {
+        "id" : "Unrestricted File Upload",
+        "name" : "Загрузка произвольного файла",
+        "fullDescription" : {
+          "text" : "Эксплуатация данной уязвимости позволяет загружать файлы с любым содержимым и/или расширением на сервер. Это дает возможность выполнять произвольный код на целевой системе или проводить атаки, направленные против клиентов («Подмена содержимого», «Межсайтовое выполнение сценариев» и пр.). Рекомендуется проверять расширения файлов, которые загружены при помощи регулярных выражений."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "SQL Injection",
+        "name" : "Внедрение SQL-кода",
+        "fullDescription" : {
+          "text" : "В приложении осуществляется недостаточная обработка потенциально опасных данных, что позволяет злоумышленнику изменить логику запроса к БД, используя произвольные SQL-операторы."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
         }
       }, {
         "id" : "101",
         "name" : "Уязвимые функции хэширования",
         "fullDescription" : {
           "text" : "Использование уязвимых функций хэширования подвергает приложение атакам, основанным на предсказании коллизий хэшей или их восстановлении. Криптографическое хэширование гарантирует, что возникновение коллизий хэшей маловероятно, и делает задачу восстановления исходного значения по хэшу трудновыполнимой."
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
+        }
+      }, {
+        "id" : "98",
+        "name" : "Незащищенная передача данных",
+        "fullDescription" : {
+          "text" : "Использование незащищенного протокола для передачи данных на прикладном уровне создает возможность для проведения атак типа «человек-посередине»."
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
+        }
+      }, {
+        "id" : "Cross-site Scripting",
+        "name" : "Межсайтовое выполнение сценариев",
+        "fullDescription" : {
+          "text" : "В приложении осуществляется недостаточная обработка потенциально опасных данных, что позволяет выполнить произвольный код в браузере пользователя в обход политики единого источника (SOP)."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "Server-Side Request Forgery",
+        "name" : "Подделка запроса сервера",
+        "fullDescription" : {
+          "text" : "Приложение, получив URL-адрес или HTTP-сообщение, осуществляет недостаточную проверку адреса назначения перед отправкой запроса. Используя данный недостаток, злоумышленник может отправлять запросы на серверы с ограниченным доступом (например, компьютеры в локальной сети), что приводит к разглашению важных данных, получению злоумышленником исходных кодов приложения, к отказу в обслуживании и т.д."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "JQuery Unsafe functions for DOM",
+        "name" : "JQuery небезопасная функция для DOM",
+        "fullDescription" : {
+          "text" : "Небезопасная функция, добавляющая HTML код в DOM структуру."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "147",
+        "name" : "Передача Cookie через HTTPS сессию без атрибута 'Httponly'",
+        "fullDescription" : {
+          "text" : "При установке значений cookie не используется атрибут \"Httponly\", в результате чего значение cookie будет доступно для скриптов со стороны клиента. Злоумышленник, имеющий возможность провести атаку типа XSS, может перехватить данные cookie.  Рекомендуется устанавливать этот атрибут у значимых Cookie-переменных. Cookie с таким параметром передаётся только в заголовках, оно никак не доступно из JavaScript."
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
+        }
+      }, {
+        "id" : "DC-FP-CVE-2020-11023",
+        "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2020-11023)",
+        "fullDescription" : {
+          "text" : "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+        },
+        "properties" : {
+          "tags" : [ "SCA" ]
+        }
+      }, {
+        "id" : "200",
+        "name" : "Раскрытие информации в статических файлах или константах",
+        "fullDescription" : {
+          "text" : "HTML документы или строковые константы могут содержать чувствительную информацию. Стоит ограничить присутствие такой информации в этих местах"
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
+        }
+      }, {
+        "id" : "ServerSideInjectionSetTimeout",
+        "name" : "Инъекция на стороне сервера - setTimeout()",
+        "fullDescription" : {
+          "text" : "Ситуация, когда в \"setTimeout()\" попадают данные, контролируемые атакующим, может привести к инъекции на стороне сервера (SSI) или удалённому выполнению кода (RCE)."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "Empty Default Exception Handler",
+        "name" : "Пустой блок обработки исключений",
+        "fullDescription" : {
+          "text" : "Слабая обработка ошибок: пустой блок обработки исключений. Игнорирование исключения может заставить программу не учитывать неожиданные состояния и условия."
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
+        }
+      }, {
+        "id" : "Arbitrary File Modification",
+        "name" : "Изменение произвольных файлов",
+        "fullDescription" : {
+          "text" : "Уязвимость позволяет злоумышленнику изменить содержимое файлов на сервере. Последствиями эксплуатации может быть отказ в обслуживании, изменение логики приложений, выполнение произвольного кода и оказание других воздействий на систему."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "JQuery HTML Inside DOM",
+        "name" : "JQuery добавление HTML кода в DOM",
+        "fullDescription" : {
+          "text" : "Уязвимость селектора, добавляющая HTML код в DOM структуру страницы."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "JQuery Wrap Element to HTML",
+        "name" : "JQuery заключение элемента в код HTML",
+        "fullDescription" : {
+          "text" : "Заключает указанный элемент в html код."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "DC-FP-CVE-2012-6708",
+        "name" : "Уязвимый компонент jquery 1.8.2 (CVE-2012-6708)",
+        "fullDescription" : {
+          "text" : "jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input to be HTML if it explicitly starts with the '<' character, limiting exploitability only to attackers who can control the beginning of a string, which is far less common."
+        },
+        "properties" : {
+          "tags" : [ "SCA" ]
+        }
+      }, {
+        "id" : "JQueryRule",
+        "name" : "Уязвимый компонент Any JQuery version 1.0.0",
+        "fullDescription" : {
+          "text" : "JQuery use strictly prohibited"
+        },
+        "properties" : {
+          "tags" : [ "SCA" ]
+        }
+      }, {
+        "id" : "ServerSideInjectionFunction",
+        "name" : "Инъекция на стороне сервера - new Function()",
+        "fullDescription" : {
+          "text" : "Ситуация, когда в \"new Function()\" попадают данные, контролируемые атакующим, может привести к инъекции на стороне сервера (SSI) или удалённому выполнению кода (RCE)."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
+        }
+      }, {
+        "id" : "96",
+        "name" : "Жестко заданный пароль",
+        "fullDescription" : {
+          "text" : "Использование жестко заданных или пустых паролей может привести к компрометации системы, последствия которой тяжело устранить."
+        },
+        "properties" : {
+          "tags" : [ "WEAKNESS" ]
+        }
+      }, {
+        "id" : "Arbitrary File Creation",
+        "name" : "Создание произвольного файла",
+        "fullDescription" : {
+          "text" : "Веб-приложение может использовать данные, переданные пользователем, при формировании пути создаваемого файла и его содержимого. Злоумышленник, используя эту уязвимость, может провести атаки направленные на выполнение произвольного кода, отказ в обслуживании и т.д."
+        },
+        "properties" : {
+          "tags" : [ "VULNERABILITY" ]
         }
       } ],
       "language" : "ru-RU"
