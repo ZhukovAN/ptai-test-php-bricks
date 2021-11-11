@@ -183,7 +183,7 @@
         } ],
         "supportedTaxonomies" : [ {
           "name" : "CWE",
-          "guid" : "32f937ca-b227-4758-ac65-c989224adee6"
+          "guid" : "55a1a708-e533-4575-a9c5-d56724fb98a9"
         } ]
       }
     },
@@ -201,7 +201,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "Server-Side Request Forgery",
       "kind" : "open",
@@ -285,7 +288,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -368,7 +374,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -470,7 +479,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -572,7 +584,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "96",
       "level" : "note",
@@ -593,7 +608,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -695,7 +713,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -797,7 +818,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "147",
       "kind" : "open",
@@ -819,7 +843,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "level" : "error",
@@ -921,7 +948,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -1023,7 +1053,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "96",
       "kind" : "pass",
@@ -1045,7 +1078,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "96",
       "level" : "note",
@@ -1066,7 +1102,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -1206,7 +1245,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -1346,7 +1388,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -1486,7 +1531,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1508,7 +1556,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1530,7 +1581,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1552,7 +1606,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -1574,7 +1631,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1596,7 +1656,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "98",
       "kind" : "pass",
@@ -1618,7 +1681,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -1720,7 +1786,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "96",
       "kind" : "pass",
@@ -1742,7 +1811,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1764,7 +1836,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "146",
       "kind" : "open",
@@ -1786,7 +1861,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1808,7 +1886,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1830,7 +1911,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -1852,7 +1936,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1874,7 +1961,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "147",
       "kind" : "open",
@@ -1896,7 +1986,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -1918,7 +2011,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -1940,7 +2036,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -2043,7 +2142,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -2065,7 +2167,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "level" : "note",
@@ -2086,7 +2191,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -2108,7 +2216,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -2130,7 +2241,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -2152,7 +2266,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -2174,7 +2291,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "101",
       "level" : "note",
@@ -2195,7 +2315,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -2217,7 +2340,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -2320,7 +2446,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -2342,7 +2471,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2015-9251",
       "kind" : "open",
@@ -2356,7 +2488,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2012-6708",
       "kind" : "open",
@@ -2370,7 +2505,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2019-11358",
       "kind" : "open",
@@ -2384,7 +2522,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2020-11023",
       "kind" : "open",
@@ -2398,7 +2539,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2020-11022",
       "kind" : "open",
@@ -2412,7 +2556,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -2434,7 +2581,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -2575,7 +2725,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -2659,7 +2812,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -2761,7 +2917,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -2783,7 +2942,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "104",
       "kind" : "open",
@@ -2805,7 +2967,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -2907,7 +3072,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2015-9251",
       "kind" : "open",
@@ -2921,7 +3089,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2012-6708",
       "kind" : "open",
@@ -2935,7 +3106,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2019-11358",
       "kind" : "open",
@@ -2949,7 +3123,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2020-11023",
       "kind" : "open",
@@ -2963,7 +3140,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "DC-FP-CVE-2020-11022",
       "kind" : "open",
@@ -2977,7 +3157,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -3080,7 +3263,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -3183,7 +3369,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -3286,7 +3475,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -3388,7 +3580,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -3643,7 +3838,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "98",
       "kind" : "open",
@@ -3665,7 +3863,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -3863,7 +4064,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -3885,7 +4089,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -4045,7 +4252,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -4148,7 +4358,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -4250,7 +4463,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -4272,7 +4488,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -4294,7 +4513,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -4316,7 +4538,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
@@ -4400,7 +4625,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
@@ -4484,7 +4712,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -4568,7 +4799,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -4652,7 +4886,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
@@ -4774,7 +5011,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -4953,7 +5193,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -5092,7 +5335,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -5231,7 +5477,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -5315,7 +5564,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -5399,7 +5651,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -5538,7 +5793,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -5774,7 +6032,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -5858,7 +6119,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -5959,7 +6223,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -6271,7 +6538,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -6526,7 +6796,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -6781,7 +7054,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
@@ -6865,7 +7141,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -6968,7 +7247,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -7071,7 +7353,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -7173,7 +7458,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -7275,7 +7563,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "level" : "error",
@@ -7377,7 +7668,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -7516,7 +7810,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -7538,7 +7835,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -7677,7 +7977,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -7699,7 +8002,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -7838,7 +8144,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -7939,7 +8248,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -7961,7 +8273,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -7983,7 +8298,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -8143,7 +8461,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "pass",
@@ -8227,7 +8548,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Unrestricted File Upload",
       "kind" : "open",
@@ -8311,7 +8635,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "pass",
@@ -8395,7 +8722,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Arbitrary File Creation",
       "kind" : "open",
@@ -8479,7 +8809,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Arbitrary File Modification",
       "kind" : "open",
@@ -8563,7 +8896,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -8646,7 +8982,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -8787,7 +9126,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -9099,7 +9441,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -9392,7 +9737,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -9666,7 +10014,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -9997,7 +10348,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -10499,7 +10853,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -10716,7 +11073,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -10914,7 +11274,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -11473,7 +11836,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -11614,7 +11980,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -12059,7 +12428,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -12162,7 +12534,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -12341,7 +12716,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -12900,7 +13278,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -13174,7 +13555,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -13676,7 +14060,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -14121,7 +14508,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -14490,7 +14880,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -14840,7 +15233,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -15228,7 +15624,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -15559,7 +15958,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -15928,7 +16330,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -16259,7 +16664,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -16571,7 +16979,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -16883,7 +17294,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -17005,7 +17419,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -17412,7 +17829,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -17496,7 +17916,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -17694,7 +18117,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -17835,7 +18261,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -17919,7 +18348,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -18098,7 +18530,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -18334,7 +18769,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -18437,7 +18875,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -18616,7 +19057,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -18738,7 +19182,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -18859,7 +19306,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -19095,7 +19545,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -19293,7 +19746,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -19434,7 +19890,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -19670,7 +20129,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -19982,7 +20444,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -20180,7 +20645,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -20301,7 +20769,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -20556,7 +21027,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -20735,7 +21209,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -20895,7 +21372,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -21055,7 +21535,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -21253,7 +21736,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
@@ -21527,7 +22013,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -21611,7 +22100,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -21695,7 +22187,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -21779,7 +22274,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -21977,7 +22475,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -22061,7 +22562,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -22354,7 +22858,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -22438,7 +22945,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery function that replaces element",
       "kind" : "open",
@@ -22864,7 +23374,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -22967,7 +23480,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "pass",
@@ -23184,7 +23700,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery function that replaces element",
       "kind" : "open",
@@ -23287,7 +23806,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -23427,7 +23949,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -23567,7 +24092,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -23707,7 +24235,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -23809,7 +24340,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
@@ -23912,7 +24446,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "pass",
@@ -24129,7 +24666,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
@@ -24498,7 +25038,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
@@ -24582,7 +25125,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "pass",
@@ -24666,7 +25212,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
@@ -24769,7 +25318,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
@@ -24910,7 +25462,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "pass",
@@ -25013,7 +25568,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "pass",
@@ -25154,7 +25712,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -25256,7 +25817,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -25359,7 +25923,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "level" : "error",
@@ -25461,7 +26028,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -25600,7 +26170,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "message" : {
@@ -25701,7 +26274,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Arbitrary File Creation",
       "kind" : "open",
@@ -25785,7 +26361,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Unrestricted File Upload",
       "kind" : "open",
@@ -25869,7 +26448,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Arbitrary File Modification",
       "kind" : "open",
@@ -25953,7 +26535,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -26036,7 +26621,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Arbitrary File Creation",
       "kind" : "open",
@@ -26120,7 +26708,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Arbitrary File Creation",
       "kind" : "open",
@@ -26204,7 +26795,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Unrestricted File Upload",
       "kind" : "open",
@@ -26288,7 +26882,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Unrestricted File Upload",
       "kind" : "open",
@@ -26372,7 +26969,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Arbitrary File Modification",
       "kind" : "open",
@@ -26456,7 +27056,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Arbitrary File Modification",
       "kind" : "open",
@@ -26540,7 +27143,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -26623,7 +27229,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -26706,7 +27315,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "pass",
@@ -26904,7 +27516,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "kind" : "open",
@@ -27007,7 +27622,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -27147,7 +27765,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -27287,7 +27908,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -27427,7 +28051,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
@@ -27529,7 +28156,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "pass",
@@ -27784,7 +28414,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "open",
@@ -27906,7 +28539,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "open",
@@ -27990,7 +28626,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "open",
@@ -28226,7 +28865,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "open",
@@ -28481,7 +29123,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "open",
@@ -28812,7 +29457,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "open",
@@ -28972,7 +29620,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -29074,7 +29725,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -29328,7 +29982,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -29411,7 +30068,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -29570,7 +30230,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -29653,7 +30316,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -29793,7 +30459,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -29933,7 +30602,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -30017,7 +30689,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
@@ -30101,7 +30776,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "98",
       "kind" : "open",
@@ -30123,7 +30801,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
@@ -30245,7 +30926,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "162",
       "kind" : "open",
@@ -30267,7 +30951,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -30502,7 +31189,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -30623,7 +31313,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Server-Side Request Forgery",
       "kind" : "open",
@@ -30707,7 +31400,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "96",
       "kind" : "pass",
@@ -30772,7 +31468,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "SQL Injection",
       "level" : "error",
@@ -30874,7 +31573,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY", "VULNERABILITY/FROM_ENTRYPOINT" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -30896,7 +31598,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -30918,7 +31623,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "96",
       "kind" : "pass",
@@ -30940,7 +31648,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -31270,7 +31981,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -31429,7 +32143,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -31512,7 +32229,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -31614,7 +32334,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -31697,7 +32420,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "pass",
@@ -31781,7 +32507,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery function that replaces element",
       "kind" : "pass",
@@ -31884,7 +32613,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -32006,7 +32738,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -32166,7 +32901,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -32288,7 +33026,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -32372,7 +33113,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -32456,7 +33200,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -32540,7 +33287,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -32662,7 +33412,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -33012,7 +33765,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -33134,7 +33890,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -33294,7 +34053,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -33416,7 +34178,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -33538,7 +34303,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -33698,7 +34466,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -33953,7 +34724,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -34037,7 +34811,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
@@ -34121,7 +34898,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "pass",
@@ -34205,7 +34985,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "pass",
@@ -34346,7 +35129,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "pass",
@@ -34449,7 +35235,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "pass",
@@ -34609,7 +35398,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "pass",
@@ -34940,7 +35732,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "pass",
@@ -35024,7 +35819,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "pass",
@@ -35260,7 +36058,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -35282,7 +36083,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -35304,7 +36108,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -35326,7 +36133,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -35348,7 +36158,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -35370,7 +36183,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -35392,7 +36208,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -35414,7 +36233,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -35436,7 +36258,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -35690,7 +36515,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -36020,7 +36848,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -36179,7 +37010,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -36281,7 +37115,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -36364,7 +37201,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -36561,7 +37401,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -36967,7 +37810,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -37050,7 +37896,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -37133,7 +37982,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -37539,7 +38391,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -37945,7 +38800,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -38047,7 +38905,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -38187,7 +39048,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -38479,7 +39343,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -38638,7 +39505,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -38759,7 +39629,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -38880,7 +39753,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -39001,7 +39877,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
@@ -39122,7 +40001,10 @@
             }
           } ]
         } ]
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "VULNERABILITY/FROM_PUBLICPROTECTED", "VULNERABILITY" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39144,7 +40026,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39166,7 +40051,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39188,7 +40076,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39210,7 +40101,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39232,7 +40126,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39254,7 +40151,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39276,7 +40176,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39298,7 +40201,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39320,7 +40226,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
@@ -39342,7 +40251,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -39364,7 +40276,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -39386,7 +40301,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -39408,7 +40326,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -39430,7 +40351,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -39452,7 +40376,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -39474,7 +40401,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "200",
       "kind" : "pass",
@@ -39496,7 +40426,10 @@
             }
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "WEAKNESS" ]
+      }
     }, {
       "ruleId" : "JQueryRule",
       "kind" : "pass",
@@ -39511,7 +40444,10 @@
             "uriBaseId" : "SRCROOT"
           }
         }
-      } ]
+      } ],
+      "properties" : {
+        "tags" : [ "SCA" ]
+      }
     } ],
     "translations" : [ {
       "name" : "Positive Technologies Application Inspector",
