@@ -183,7 +183,7 @@
         } ],
         "supportedTaxonomies" : [ {
           "name" : "CWE",
-          "guid" : "846d7705-5684-45b4-86b5-5b73966d89fe"
+          "guid" : "32f937ca-b227-4758-ac65-c989224adee6"
         } ]
       }
     },
@@ -289,7 +289,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -373,7 +372,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -476,7 +474,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -578,7 +575,7 @@
       } ]
     }, {
       "ruleId" : "96",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Hardcoded Password"
       },
@@ -600,7 +597,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -703,7 +699,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -806,7 +801,7 @@
     }, {
       "ruleId" : "147",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Sensitive Cookie in HTTPS Session Without ‘Httponly’ Attribute"
       },
@@ -930,7 +925,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1033,7 +1027,7 @@
     }, {
       "ruleId" : "96",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Hardcoded Password"
       },
@@ -1054,7 +1048,7 @@
       } ]
     }, {
       "ruleId" : "96",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Hardcoded Password"
       },
@@ -1076,7 +1070,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1217,7 +1210,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1358,7 +1350,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1499,7 +1490,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1521,7 +1512,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1543,7 +1534,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1565,7 +1556,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -1587,7 +1578,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1609,7 +1600,7 @@
     }, {
       "ruleId" : "98",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Insecure Transport"
       },
@@ -1631,7 +1622,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -1734,7 +1724,7 @@
     }, {
       "ruleId" : "96",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Hardcoded Password"
       },
@@ -1756,7 +1746,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1778,7 +1768,7 @@
     }, {
       "ruleId" : "146",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Sensitive Cookie in HTTPS Session Without ‘Secure’ Attribute"
       },
@@ -1800,7 +1790,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1822,7 +1812,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1844,7 +1834,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -1866,7 +1856,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1888,7 +1878,7 @@
     }, {
       "ruleId" : "147",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Sensitive Cookie in HTTPS Session Without ‘Httponly’ Attribute"
       },
@@ -1910,7 +1900,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -1932,7 +1922,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -2057,7 +2047,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -2078,7 +2068,7 @@
       } ]
     }, {
       "ruleId" : "104",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -2100,7 +2090,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -2122,7 +2112,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -2144,7 +2134,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -2166,7 +2156,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -2187,7 +2177,7 @@
       } ]
     }, {
       "ruleId" : "101",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Weak Cryptographic Hash"
       },
@@ -2209,7 +2199,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -2334,7 +2324,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -2356,7 +2346,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2015-9251",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2015-9251)"
       },
@@ -2371,7 +2360,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2012-6708",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2012-6708)"
       },
@@ -2386,7 +2374,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2019-11358",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2019-11358)"
       },
@@ -2401,7 +2388,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2020-11023",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2020-11023)"
       },
@@ -2416,7 +2402,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2020-11022",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2020-11022)"
       },
@@ -2431,7 +2416,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -2453,7 +2438,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -2594,7 +2579,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -2678,7 +2663,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -2781,7 +2765,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -2803,7 +2787,7 @@
     }, {
       "ruleId" : "104",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "System Information Leak"
       },
@@ -2825,7 +2809,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -2928,7 +2911,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2015-9251",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2015-9251)"
       },
@@ -2943,7 +2925,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2012-6708",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2012-6708)"
       },
@@ -2958,7 +2939,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2019-11358",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2019-11358)"
       },
@@ -2973,7 +2953,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2020-11023",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2020-11023)"
       },
@@ -2988,7 +2967,6 @@
     }, {
       "ruleId" : "DC-FP-CVE-2020-11022",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Vulnerable component jquery 1.8.2 (CVE-2020-11022)"
       },
@@ -3312,7 +3290,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -3415,7 +3392,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -3670,7 +3647,7 @@
     }, {
       "ruleId" : "98",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Insecure Transport"
       },
@@ -3692,7 +3669,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -3890,7 +3867,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -3912,7 +3889,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -4175,7 +4152,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -4278,7 +4254,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -4300,7 +4276,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -4322,7 +4298,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -4344,7 +4320,7 @@
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -4428,7 +4404,7 @@
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -4512,7 +4488,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -4596,7 +4572,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -4680,7 +4656,7 @@
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -4802,7 +4778,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -4980,7 +4956,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -5120,7 +5095,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -5261,7 +5235,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -5345,7 +5319,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -5428,7 +5402,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -5569,7 +5542,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -5805,7 +5778,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -5888,7 +5861,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -5991,7 +5963,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -6303,7 +6275,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -6558,7 +6530,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -6813,7 +6785,7 @@
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -7103,7 +7075,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7206,7 +7177,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7410,7 +7380,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7551,7 +7520,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -7572,7 +7541,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7713,7 +7681,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -7734,7 +7702,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7874,7 +7841,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -7977,7 +7943,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -7999,7 +7965,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -8021,7 +7987,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -8181,7 +8147,7 @@
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -8349,7 +8315,7 @@
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -8601,7 +8567,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -8685,7 +8650,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -8826,7 +8791,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -9138,7 +9103,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -9431,7 +9396,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -9705,7 +9670,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -10036,7 +10001,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -10538,7 +10503,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -10755,7 +10720,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -10953,7 +10918,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -11512,7 +11477,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -11653,7 +11618,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -12098,7 +12063,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -12201,7 +12166,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -12380,7 +12345,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -12939,7 +12904,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -13213,7 +13178,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -13715,7 +13680,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -14160,7 +14125,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -14529,7 +14494,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -14879,7 +14844,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -15267,7 +15232,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -15598,7 +15563,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -15967,7 +15932,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -16298,7 +16263,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -16610,7 +16575,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -17044,7 +17009,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -17451,7 +17416,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -17535,7 +17500,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -17733,7 +17698,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -17874,7 +17839,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -17958,7 +17923,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -18137,7 +18102,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -18373,7 +18338,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -18476,7 +18441,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -18777,7 +18742,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -18899,7 +18863,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -19135,7 +19099,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -19333,7 +19297,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -19474,7 +19438,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -19710,7 +19674,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -20022,7 +19986,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -20220,7 +20184,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -20342,7 +20305,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -20597,7 +20560,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -20776,7 +20739,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -20936,7 +20899,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21096,7 +21059,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -21294,7 +21257,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -21568,7 +21531,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21652,7 +21615,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21736,7 +21699,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -21820,7 +21783,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -22018,7 +21981,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -22102,7 +22065,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -22395,7 +22358,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -22479,7 +22442,7 @@
     }, {
       "ruleId" : "JQuery function that replaces element",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery function that replaces element"
       },
@@ -23008,7 +22971,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -23225,7 +23188,7 @@
     }, {
       "ruleId" : "JQuery function that replaces element",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery function that replaces element"
       },
@@ -23328,7 +23291,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -23469,7 +23431,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -23610,7 +23571,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -23751,7 +23711,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -23854,7 +23813,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -23957,7 +23916,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -24174,7 +24133,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24543,7 +24502,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24627,7 +24586,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24711,7 +24670,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24814,7 +24773,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -24955,7 +24914,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -25058,7 +25017,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -25199,7 +25158,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -25506,7 +25464,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -25646,7 +25603,6 @@
       } ]
     }, {
       "ruleId" : "Cross-site Scripting",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26001,7 +25957,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26589,7 +26544,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26673,7 +26627,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -26757,7 +26710,7 @@
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -27058,7 +27011,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -27199,7 +27151,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -27340,7 +27291,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -27481,7 +27431,6 @@
     }, {
       "ruleId" : "Cross-site Scripting",
       "kind" : "open",
-      "level" : "error",
       "message" : {
         "text" : "Cross-Site Scripting"
       },
@@ -27584,7 +27533,7 @@
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -27839,7 +27788,7 @@
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -27961,7 +27910,7 @@
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -28045,7 +27994,7 @@
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -28281,7 +28230,7 @@
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -28536,7 +28485,7 @@
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -28867,7 +28816,7 @@
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -29027,7 +28976,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -29130,7 +29078,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -29385,7 +29332,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -29469,7 +29415,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -29629,7 +29574,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -29713,7 +29657,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -29854,7 +29797,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -29995,7 +29937,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -30079,7 +30021,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -30163,7 +30105,7 @@
     }, {
       "ruleId" : "98",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Insecure Transport"
       },
@@ -30185,7 +30127,7 @@
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -30307,7 +30249,7 @@
     }, {
       "ruleId" : "162",
       "kind" : "open",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Use of Uninitialized Variable"
       },
@@ -30329,7 +30271,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -30565,7 +30506,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -30771,7 +30711,7 @@
     }, {
       "ruleId" : "96",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Hardcoded Password"
       },
@@ -30938,7 +30878,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -30960,7 +30900,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -30982,7 +30922,7 @@
     }, {
       "ruleId" : "96",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Hardcoded Password"
       },
@@ -31004,7 +30944,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -31335,7 +31274,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -31495,7 +31433,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -31579,7 +31516,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -31682,7 +31618,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -31766,7 +31701,7 @@
     }, {
       "ruleId" : "DOM Modification HTML Tag",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "DOM Modification HTML Tag"
       },
@@ -31850,7 +31785,7 @@
     }, {
       "ruleId" : "JQuery function that replaces element",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery function that replaces element"
       },
@@ -31953,7 +31888,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32075,7 +32010,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32235,7 +32170,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32357,7 +32292,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32441,7 +32376,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32525,7 +32460,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32609,7 +32544,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -32731,7 +32666,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33081,7 +33016,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33203,7 +33138,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33363,7 +33298,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33485,7 +33420,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33607,7 +33542,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -33767,7 +33702,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -34022,7 +33957,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -34106,7 +34041,7 @@
     }, {
       "ruleId" : "JQuery HTML Inside DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery HTML Inside DOM"
       },
@@ -34190,7 +34125,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -34274,7 +34209,7 @@
     }, {
       "ruleId" : "JQuery Unsafe functions for DOM",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Unsafe functions for DOM"
       },
@@ -34415,7 +34350,7 @@
     }, {
       "ruleId" : "JQuery Wrap Element to HTML",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "JQuery Wrap Element to HTML"
       },
@@ -34518,7 +34453,7 @@
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -34678,7 +34613,7 @@
     }, {
       "ruleId" : "ServerSideInjectionFunction",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - new Function()"
       },
@@ -35009,7 +34944,7 @@
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -35093,7 +35028,7 @@
     }, {
       "ruleId" : "ServerSideInjectionSetTimeout",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Server Side Injection - setTimeout()"
       },
@@ -35329,7 +35264,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -35351,7 +35286,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -35373,7 +35308,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -35395,7 +35330,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -35417,7 +35352,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -35439,7 +35374,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -35461,7 +35396,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -35483,7 +35418,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -35505,7 +35440,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -35760,7 +35694,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -36091,7 +36024,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -36251,7 +36183,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -36354,7 +36285,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -36438,7 +36368,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -36636,7 +36565,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -37043,7 +36971,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -37127,7 +37054,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -37211,7 +37137,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -37618,7 +37543,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -38025,7 +37949,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -38128,7 +38051,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -38269,7 +38191,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -38562,7 +38483,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -38722,7 +38642,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -38844,7 +38763,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -38966,7 +38884,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -39088,7 +39005,6 @@
     }, {
       "ruleId" : "Log Forging",
       "kind" : "pass",
-      "level" : "error",
       "message" : {
         "text" : "Log Forging"
       },
@@ -39210,7 +39126,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39232,7 +39148,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39254,7 +39170,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39276,7 +39192,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39298,7 +39214,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39320,7 +39236,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39342,7 +39258,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39364,7 +39280,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39386,7 +39302,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39408,7 +39324,7 @@
     }, {
       "ruleId" : "Empty Default Exception Handler",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Empty Default Exception Handler"
       },
@@ -39430,7 +39346,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -39452,7 +39368,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -39474,7 +39390,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -39496,7 +39412,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -39518,7 +39434,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -39540,7 +39456,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
@@ -39562,7 +39478,7 @@
     }, {
       "ruleId" : "200",
       "kind" : "pass",
-      "level" : "error",
+      "level" : "note",
       "message" : {
         "text" : "Information Exposure Through Static Content Or String Literals"
       },
